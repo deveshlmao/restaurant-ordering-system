@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.controllers.LoginController"
+      alignment="CENTER"
+      spacing="15"
+      stylesheets="@css/register.css"
+      style="-fx-background-color: #2c3e50; -fx-padding: 20px; -fx-pref-width: 400px; -fx-pref-height: 400px;">
+
+    <Label text="Login" style="-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+    <TextField fx:id="usernameField" promptText="Username" style="-fx-pref-width: 250px;" />
+    <PasswordField fx:id="passwordField" promptText="Password" style="-fx-pref-width: 250px;" />
+
+    <Button text="Login" fx:id="loginButton" onAction="#handleLogin"
+            style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 250px;" />
+
+    <Button text="Register" fx:id="registerButton" onAction="#switchToRegister"
+            style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 250px;" />
+
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red;" />
+</VBox>
+

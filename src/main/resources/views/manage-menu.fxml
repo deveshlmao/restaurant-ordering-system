@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="main.controllers.ManageMenuController"
+            stylesheets="@css/admin-theme.css"
+            style="-fx-background-color: #292929; -fx-padding: 20;">
+
+    <children>
+
+        <Label text="Manage Menu" layoutX="20" layoutY="20"
+               style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" />
+
+
+        <TableView fx:id="menuTable" layoutX="20" layoutY="60" prefWidth="600" prefHeight="300"
+                   style="-fx-background-color: #292929; -fx-border-color: #444;">
+            <columns>
+                <TableColumn text="ID" fx:id="itemIdColumn" prefWidth="100" />
+                <TableColumn text="Name" fx:id="nameColumn" prefWidth="200" />
+                <TableColumn text="Price" fx:id="priceColumn" prefWidth="100" />
+                <TableColumn text="Category" fx:id="categoryColumn" prefWidth="230" />
+            </columns>
+        </TableView>
+
+
+        <Button text="Add Item" fx:id="addItemButton" layoutX="20" layoutY="380" prefWidth="120"
+                style="-fx-background-color: #4CAF50; -fx-text-fill: white;" onAction="#handleAddItem"/>
+
+        <Button text="Edit Item" fx:id="editItemButton" layoutX="160" layoutY="380" prefWidth="120"
+                style="-fx-background-color: #2196F3; -fx-text-fill: white;" onAction="#handleEditItem"/>
+
+        <Button text="Delete Item" fx:id="deleteItemButton" layoutX="300" layoutY="380" prefWidth="120"
+                style="-fx-background-color: #D32F2F; -fx-text-fill: white;" onAction="#handleDeleteItem"/>
+
+        <Button text="Back" fx:id="backButton" layoutX="440" layoutY="380" prefWidth="120"
+                style="-fx-background-color: #555; -fx-text-fill: white;" onAction="#backToDashboard"/>
+
+    </children>
+</AnchorPane>

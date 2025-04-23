@@ -1,0 +1,78 @@
+
+.root {
+    -fx-background-color: #1E1E1E;
+    -fx-padding: 20px;
+}
+
+
+.table-view {
+    -fx-background-color: black;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+
+
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+.shopping-cart-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-border-color: #3E3E3E;
+}
+
+
+.cart-container {
+    -fx-background-color: #252526;
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #3E3E3E;
+}
+
+
+.total-price-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+.button {
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.button-dark {
+    -fx-background-color: #3E3E3E;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-dark:hover {
+    -fx-background-color: #575757;
+}
+
+.button-primary {
+    -fx-background-color: #0078D7;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-primary:hover {
+    -fx-background-color: #005A9E;
+}
